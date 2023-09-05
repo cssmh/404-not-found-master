@@ -1,77 +1,79 @@
 body{
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Montserrat', sans-serif;
     font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'PT Serif', serif;
     font-family: 'Roboto', sans-serif;
     font-family: 'Space Mono', monospace;
 }
-.nfound{
-    margin: 0px 0px 80px 120px;
-    color: #333;
-    font-family: Inconsolata;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: -1.92px;
-    text-transform: uppercase;
+main{
+    max-width: 1280px;
+    margin: 30px auto
 }
-.error img{
-    width: 600px;
-    height: 420px;
-    border-radius: 8px;
-    background: #FFF;
-    box-shadow: 0px 2px 24px 0px rgba(0, 0, 0, 0.10);
+.not-found{
+    margin-bottom: 90px;
+    padding-left: 73px;
+    color: #333;
+    font-size: 20px;
+    text-transform: uppercase;
 }
 .error{
     display: flex;
     justify-content: center;
 }
+.error img{
+    width: 45%;
+    height: 410px;
+    margin-right: 90px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 2px 24px 0px rgba(0, 0, 0, 0.10);
+}
+.title-desc{
+    color:#4F4F4F;
+    font-size: 16px;
+    margin-bottom: 46px;
+}
 .title{
     margin-top: 0;
-    color: var(--gray-1, #333);
-    font-family: Space Mono;
-    font-size: 44px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+    width: 480px;
+    font-size: 55px;
+    color: #333;
     letter-spacing: -2.24px;
 }
 .btn-primary{
     color: #FFF;
     font-size: 14px;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: -0.49px;
+    padding: 22px 37px;
     text-transform: uppercase;
-    background: var(--gray-1, #333);
-    width: 216px;
-    height: 68px;
+    background-color: #333;
 }
-.paragraph{
-    color: var(--gray-2, #4F4F4F);
-    font-size: 18px;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: -0.63px;
-    margin-bottom: 64px;
+.footer{
+    display: grid;
+    justify-content: center;
+    margin-top: 100px;
+    color: #BDBDBD;
+    font-size: 14px;
 }
-.description{
-    margin: 0px 60px 0px 80px;
-}
-
-@media screen and (max-width:576px) {
+@media screen and (max-width:665px) {
+    .not-found{
+        padding-left: 20px;
+    }
     .error{
         flex-direction: column;
-        align-items: center;
-    }
-    .nfound{
-        margin: 30px;
     }
     .error img{
-        width: 80%;
-        height: 80%;
-    }
-    .description{
         width: 100%;
-        margin-top: 70px;
+        height: fit-content;
+        margin-bottom: 60px;
+    }
+    .news{
+        margin-left: 20px;
+    }
+    .title{
+        width: 350px;
+        margin-top: 0;
+        font-size: 42px;
     }
 }
